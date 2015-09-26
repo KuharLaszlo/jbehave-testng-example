@@ -1,4 +1,4 @@
-package org.jbehave.examples.core.testng.steps;
+package testng.steps;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Named;

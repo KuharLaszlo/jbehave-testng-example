@@ -1,4 +1,4 @@
-package org.jbehave.examples.core.testng;
+package testng;
 
 import org.jbehave.core.Embeddable;
 import org.jbehave.core.configuration.Configuration;
@@ -15,17 +15,14 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.core.steps.ParameterConverters;
-import org.jbehave.examples.core.testng.steps.CalculatorSteps;
+import testng.steps.CalculatorSteps;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Properties;
 
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
-import static org.jbehave.core.reporters.Format.CONSOLE;
-import static org.jbehave.core.reporters.Format.HTML;
-import static org.jbehave.core.reporters.Format.TXT;
-import static org.jbehave.core.reporters.Format.XML;
+import static org.jbehave.core.reporters.Format.*;
 
 /**
  * <p>
@@ -37,6 +34,8 @@ import static org.jbehave.core.reporters.Format.XML;
  * {@link org.testng.annotations.Test} annotation.
  * </p>
  */
+
+//@RunWith(JUnitReportingRunner.class)
 public class CoreStoriesUsingTestNG extends JUnitStories {
 
     @Override
