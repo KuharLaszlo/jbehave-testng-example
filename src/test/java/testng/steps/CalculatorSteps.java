@@ -10,24 +10,24 @@ import org.testng.Assert;
 public class CalculatorSteps {
     private Calculator calculator;
 
-    @Given("我有一個加法功能")
-    public void given我有一個加法功能() {
+    @Given("I have an addition function")
+    public void given_I_have_an_addition_function() {
         calculator = new Calculator();
     }
 
-    @When("我輸入<加數>")
-    public void when我輸入加數(@Named("加數")double 加數) {
-        calculator.setAddend(加數);
+    @When("I type <addend>")
+    public void when_I_type_addend(@Named("addend")double addend) {
+        calculator.setAddend(addend);
     }
 
-    @When("我輸入<被加數>")
-    public void when我輸入被加數(@Named("被加數")double 被加數) {
-        calculator.setSummand(被加數);
+    @When("I type <summand>")
+    public void when_I_type_summand(@Named("summand")double summand) {
+        calculator.setSummand(summand);
     }
 
-    @Then("顯示<相加結果>")
-    public void then顯示相加結果(@Named("相加結果")double 結果) {
-        Assert.assertEquals(calculator.getResult(), 結果);
+    @Then("show <result>")
+    public void then_show_result(@Named("result")double result) {
+        Assert.assertEquals(calculator.getResult(), result);
     }
 
 }

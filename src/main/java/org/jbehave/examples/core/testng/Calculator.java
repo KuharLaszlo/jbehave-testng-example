@@ -14,6 +14,6 @@ public class Calculator {
     }
 
     public double getResult() {
-        return addend + summand;
+        return this.addend + this.summand;
     }
 }
